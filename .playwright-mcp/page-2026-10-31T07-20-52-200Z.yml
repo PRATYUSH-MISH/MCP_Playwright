@@ -1,0 +1,56 @@
+- generic [ref=f1e4]:
+  - generic [ref=f1e5]:
+    - img "logo" [ref=f1e6] [cursor=pointer]
+    - paragraph [ref=f1e7] [cursor=pointer]: Scripted QA
+    - button "Sign Out" [ref=f1e8] [cursor=pointer]
+  - generic [ref=f1e9]:
+    - complementary [ref=f1e10]:
+      - heading "Categories" [level=2] [ref=f1e11]
+      - list [ref=f1e12]:
+        - listitem [ref=f1e13]:
+          - link "Table" [ref=f1e14] [cursor=pointer]:
+            - /url: /webTable
+        - listitem [ref=f1e15]:
+          - link "Dropdown" [ref=f1e16] [cursor=pointer]:
+            - /url: /dropDown
+        - listitem [ref=f1e17]:
+          - link "Alerts & Windows" [ref=f1e18] [cursor=pointer]:
+            - /url: /alertsAndWindows
+        - listitem [ref=f1e19]:
+          - link "Frame" [ref=f1e20] [cursor=pointer]:
+            - /url: /frame
+        - listitem [ref=f1e21]:
+          - link "Form" [ref=f1e22] [cursor=pointer]:
+            - /url: /form
+        - listitem [ref=f1e23]:
+          - link "Calender" [ref=f1e24] [cursor=pointer]:
+            - /url: /calender
+        - listitem [ref=f1e25]:
+          - link "Mouse Actions" [ref=f1e26] [cursor=pointer]:
+            - /url: /mouseActions
+        - listitem [ref=f1e27]:
+          - link "Shopping" [ref=f1e28] [cursor=pointer]:
+            - /url: /shopping
+    - generic [ref=f1e378]:
+      - generic [ref=f1e379]:
+        - heading "🧾 Bill" [level=1] [ref=f1e380]
+        - generic [ref=f1e381]:
+          - button "Clear Cart" [ref=f1e382]
+          - button "Back to Shopping" [ref=f1e383]
+      - generic [ref=f1e384]:
+        - generic [ref=f1e385]: Item
+        - generic [ref=f1e386]: Price
+        - generic [ref=f1e387]: Qty
+        - generic [ref=f1e388]: Total
+      - generic [ref=f1e390]:
+        - generic [ref=f1e391]:
+          - img "Laptop" [ref=f1e392]
+          - generic [ref=f1e393]: Laptop
+        - generic [ref=f1e394]:
+          - generic [ref=f1e395]: $1000.00
+          - generic [ref=f1e397]: x1
+          - generic [ref=f1e399]: $1000.00
+      - generic [ref=f1e400]:
+        - generic [ref=f1e401]: Grand Total
+        - generic [ref=f1e402]: $1000.00
+      - button "Place Order" [ref=f1e403] [cursor=pointer]

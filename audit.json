@@ -1,0 +1,260 @@
+﻿{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@cucumber/cucumber": {
+      "name": "@cucumber/cucumber",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@cucumber/gherkin",
+        "@cucumber/gherkin-utils",
+        "@cucumber/messages",
+        "glob",
+        "semver"
+      ],
+      "effects": [
+        "cucumber-html-reporter"
+      ],
+      "range": "<=12.9.0",
+      "nodes": [
+        "node_modules/cucumber-html-reporter/node_modules/@cucumber/cucumber"
+      ],
+      "fixAvailable": {
+        "name": "cucumber-html-reporter",
+        "version": "5.0.2",
+        "isSemVerMajor": true
+      }
+    },
+    "@cucumber/gherkin": {
+      "name": "@cucumber/gherkin",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@cucumber/messages"
+      ],
+      "effects": [
+        "@cucumber/gherkin-utils"
+      ],
+      "range": "<=34.0.0",
+      "nodes": [
+        "node_modules/cucumber-html-reporter/node_modules/@cucumber/gherkin",
+        "node_modules/cucumber-html-reporter/node_modules/@cucumber/gherkin-utils/node_modules/@cucumber/gherkin"
+      ],
+      "fixAvailable": {
+        "name": "cucumber-html-reporter",
+        "version": "5.0.2",
+        "isSemVerMajor": true
+      }
+    },
+    "@cucumber/gherkin-utils": {
+      "name": "@cucumber/gherkin-utils",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@cucumber/gherkin",
+        "@cucumber/messages"
+      ],
+      "effects": [
+        "@cucumber/cucumber"
+      ],
+      "range": "<=10.0.0",
+      "nodes": [
+        "node_modules/cucumber-html-reporter/node_modules/@cucumber/gherkin-utils"
+      ],
+      "fixAvailable": {
+        "name": "cucumber-html-reporter",
+        "version": "5.0.2",
+        "isSemVerMajor": true
+      }
+    },
+    "@cucumber/messages": {
+      "name": "@cucumber/messages",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "uuid"
+      ],
+      "effects": [
+        "@cucumber/cucumber",
+        "@cucumber/gherkin",
+        "@cucumber/gherkin-utils"
+      ],
+      "range": "<=28.1.0",
+      "nodes": [
+        "node_modules/cucumber-html-reporter/node_modules/@cucumber/gherkin-utils/node_modules/@cucumber/messages",
+        "node_modules/cucumber-html-reporter/node_modules/@cucumber/messages"
+      ],
+      "fixAvailable": {
+        "name": "cucumber-html-reporter",
+        "version": "5.0.2",
+        "isSemVerMajor": true
+      }
+    },
+    "cucumber-html-reporter": {
+      "name": "cucumber-html-reporter",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@cucumber/cucumber",
+        "uuid"
+      ],
+      "effects": [],
+      "range": ">=5.1.0",
+      "nodes": [
+        "node_modules/cucumber-html-reporter"
+      ],
+      "fixAvailable": {
+        "name": "cucumber-html-reporter",
+        "version": "5.0.2",
+        "isSemVerMajor": true
+      }
+    },
+    "glob": {
+      "name": "glob",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "minimatch"
+      ],
+      "effects": [
+        "@cucumber/cucumber"
+      ],
+      "range": "3.0.0 - 13.0.6",
+      "nodes": [
+        "node_modules/glob"
+      ],
+      "fixAvailable": {
+        "name": "cucumber-html-reporter",
+        "version": "5.0.2",
+        "isSemVerMajor": true
+      }
+    },
+    "minimatch": {
+      "name": "minimatch",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1244012,
+          "name": "minimatch",
+          "dependency": "minimatch",
+          "title": "minimatch has potential denial of service via globparts amplification",
+          "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-405"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<11.0.1"
+        }
+      ],
+      "effects": [
+        "glob"
+      ],
+      "range": "<11.0.1",
+      "nodes": [
+        "node_modules/minimatch"
+      ],
+      "fixAvailable": {
+        "name": "cucumber-html-reporter",
+        "version": "5.0.2",
+        "isSemVerMajor": true
+      }
+    },
+    "semver": {
+      "name": "semver",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1112921,
+          "name": "semver",
+          "dependency": "semver",
+          "title": "semver vulnerable to Regular Expression Denial of Service",
+          "url": "https://github.com/advisories/GHSA-c2qf-rxjj-qqgw",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=7.0.0 <7.5.2"
+        }
+      ],
+      "effects": [
+        "@cucumber/cucumber"
+      ],
+      "range": "7.0.0 - 7.5.1",
+      "nodes": [
+        "node_modules/cucumber-html-reporter/node_modules/semver"
+      ],
+      "fixAvailable": {
+        "name": "cucumber-html-reporter",
+        "version": "5.0.2",
+        "isSemVerMajor": true
+      }
+    },
+    "uuid": {
+      "name": "uuid",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1119441,
+          "name": "uuid",
+          "dependency": "uuid",
+          "title": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+          "url": "https://github.com/advisories/GHSA-w5hq-g745-h8pq",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-787",
+            "CWE-1285"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": "<11.1.1"
+        }
+      ],
+      "effects": [
+        "@cucumber/messages",
+        "cucumber-html-reporter"
+      ],
+      "range": "<11.1.1",
+      "nodes": [
+        "node_modules/cucumber-html-reporter/node_modules/@cucumber/gherkin-utils/node_modules/uuid",
+        "node_modules/cucumber-html-reporter/node_modules/@cucumber/messages/node_modules/uuid",
+        "node_modules/uuid"
+      ],
+      "fixAvailable": {
+        "name": "cucumber-html-reporter",
+        "version": "5.0.2",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 6,
+      "high": 3,
+      "critical": 0,
+      "total": 9
+    },
+    "dependencies": {
+      "prod": 1,
+      "dev": 217,
+      "optional": 28,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 217
+    }
+  }
+}

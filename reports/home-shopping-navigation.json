@@ -1,0 +1,162 @@
+[
+  {
+    "description": "  As an authenticated user\n  I want to open the Shopping page from the home page\n  So that I can browse products",
+    "elements": [
+      {
+        "description": "",
+        "id": "shopping-navigation-from-the-home-page;open-shopping-from-the-home-page",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Open Shopping from the home page",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 832949899
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 610027999
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I open the protected home path \"/home\"",
+            "match": {
+              "location": "tests\\step-definitions\\home-shopping-navigation.steps.ts:6"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 629669100
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I am redirected to the sign-in page",
+            "match": {
+              "location": "tests\\step-definitions\\home-shopping-navigation.steps.ts:13"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 550366700
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I sign in with username \"admin\" and password \"Pass@9211\"",
+            "match": {
+              "location": "tests\\step-definitions\\home-shopping-navigation.steps.ts:18"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 301817299
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I am on the home page",
+            "match": {
+              "location": "tests\\step-definitions\\home-shopping-navigation.steps.ts:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 26757900
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the Shopping tab is visible",
+            "match": {
+              "location": "tests\\step-definitions\\home-shopping-navigation.steps.ts:30"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 150072099
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I open the Shopping tab",
+            "match": {
+              "location": "tests\\step-definitions\\home-shopping-navigation.steps.ts:34"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 6065000
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I am on the Shopping page at \"/shopping\"",
+            "match": {
+              "location": "tests\\step-definitions\\home-shopping-navigation.steps.ts:38"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 96367500
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the Products heading is visible",
+            "match": {
+              "location": "tests\\step-definitions\\home-shopping-navigation.steps.ts:45"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 366477799
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "shopping-navigation-from-the-home-page",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Shopping navigation from the home page",
+    "tags": [
+      {
+        "name": "@sanity",
+        "line": 1
+      },
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "features\\home-shopping-navigation.feature"
+  }
+]
